@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<style type="text/css" media="screen">
+	*{padding:0;margin:0;list-style: none;}
+	/*楼梯*/
+    #loutiBox{width:40px;position:fixed;top:150px;left:20px;border:1px solid #DDDDDD;display:none;}
+    #loutiBox li:not(:last-child){border-bottom:1px solid #ddd;}
+    #loutiBox li{width:100%;height:40px;text-align:center;line-height:40px;font-size:#333333;cursor:pointer;}
+    #loutiBox li:hover{background:#f90;color:#fff;}
+    #loutiBox li.on{background:#f90;color:#fff;}
+
+    /*中间内容*/
+     .bigBxo{width:1200px;height:auto;margin:0 auto;}
+
+     /*头部*/
+     #header{width:100%;height:500px;border:1px solid #43e345;text-align:center;line-height:500px;margin-bottom: 50px;}
+
+    /*楼层*/
+    #loucenBox{width:100%;height:auto;margin-bottom: 50px;}
+    #loucenBox .loucen{width:100%;height:240px;border:1px solid #ddd;margin-bottom:30px;}
+    #loucenBox .loucen img{width:100%;height:100%;}
+
+    /*导航*/
+   .bigBxo #navBox{width:1200px;height:80px;background:#EFF0F8;margin-bottom:100px;}
+    .bigBxo #navBox li{width:20%;height:100%;float:left;text-align:center;line-height:80px;color:#333;}
+
+    /*Ptext*/
+    #pBox{margin-bottom:30px;margin-top: 160px;}
+    #pBox p{line-height:28px;font-size:18px;color:#999;}
+
+    /*loubo*/
+    #louboBox{width:520px;height:240px;margin:0 auto;position:relative;margin-bottom: 50px;}
+    #louboBox .innerarea{width:100%;height:100%;position:relative;overflow:hidden;cursor:pointer;}
+    #louboBox .innerarea #yd{position:absolute;bottom:10px;right:15px;}
+    #louboBox .innerarea #yd li{width:40px;height:34px;background:#1C1524;float:left;margin-right: 5px;border-radius:5px;text-align:center;line-height:34px;color:#fff;}
+    #louboBox .innerarea #yd li.active{background: #fff;color:#1C1524;}
+    #louboBox .innerarea #yd li:hover{background: #fff;color:#1C1524;}
+    #louboBox #prevBtn,#louboBox #nextBtn{width:34px;height:50px;background:#1c1524;position:absolute;top:50%;margin-top: -25px;}
+    #louboBox #prevBtn{left:0;}
+    #louboBox #nextBtn{right:0;}
+</style>
+<body>
+  <div id="loutiBox">
+	  	<ul>
+	  		<li>1</li>
+	  		<li>2</li>
+	  		<li>3</li>
+	  		<li>4</li>
+	  		<li>5</li>
+	  		<li>6</li>
+	  		<li>7</li>
+	  		<li>8</li>
+	  		<li>9</li>
+	  		<li class="goTop">TOP</li>
+	  	</ul>
+  </div>
+
+
+  <div class="bigBxo">	
+           <div id="header">header</div>
+		<!-- loucen -->
+		  <div id="loucenBox">
+		  	 <ul>
+		  	 	<li class="loucen"><img _src="img/activity_1.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_2.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_3.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_1.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_2.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_3.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_1.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_2.jpg" alt=""></li>
+		  	 	<li class="loucen"><img _src="img/activity_3.jpg" alt=""></li>
+		  	 </ul>
+		  </div>
+		<!-- daohang -->
+		  <div id="navBox">
+		  	 <ul>
+		         <li>1</li>
+		         <li>2</li>
+		         <li>3</li>
+		         <li>4</li>
+		         <li>5</li>
+		  	 </ul>
+		  </div>
+		<!-- ptext -->
+		  <div id="pBox">
+		  	 <p>Just as our slogan implies, our business goal is to be the easiest PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, we are committed to meeting the needs of our customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As one of the most experienced PCB manufacturers and SMT Assemblers in China, we pride ourselves to be your best business partners as well as good friends in every aspect of your PCB needs. We strive to make your R&D work easy and hassle-free.</p>
+		  	 <p>Just as our slogan implies, our business goal is to be the easiest PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, we are committed to meeting the needs of our customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As one of the most experienced PCB manufacturers and SMT Assemblers in China, we pride ourselves to be your best business partners as well as good friends in every aspect of your PCB needs. We strive to make your R&D work easy and hassle-free.</p>
+		  	 <p>Just as our slogan implies, our business goal is to be the easiest PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, we are committed to meeting the needs of our customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As one of the most experienced PCB manufacturers and SMT Assemblers in China, we pride ourselves to be your best business partners as well as good friends in every aspect of your PCB needs. We strive to make your R&D work easy and hassle-free.</p>
+		  	 <p>Just as our slogan implies, our business goal is to be the easiest PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, we are committed to meeting the needs of our customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As one of the most experienced PCB manufacturers and SMT Assemblers in China, we pride ourselves to be your best business partners as well as good friends in every aspect of your PCB needs. We strive to make your R&D work easy and hassle-free.</p>
+		  	 <p>Just as our slogan implies, our business goal is to be the easiest PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, we are committed to meeting the needs of our customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As one of the most experienced PCB manufacturers and SMT Assemblers in China, we pride ourselves to be your best business partners as well as good friends in every aspect of your PCB needs. We strive to make your R&D work easy and hassle-free.</p>
+		  </div>
+		<!-- loubo -->
+		  <div id="louboBox">
+		  	  <div class="innerarea">
+		  	  	 <div class="imgBox">
+		  	  	 	<img src="img/activity_1.jpg" alt="">
+		  	  	 	<img src="img/activity_2.jpg" alt="">
+		  	  	 	<img src="img/activity_3.jpg" alt="">
+		  	  	 </div>
+		  	  	 <ul id="yd">
+		  	  	 	<li class="active">1</li>
+		  	  	 	<li>2</li>
+		  	  	 	<li>3</li>
+		  	  	 </ul>
+		  	  </div>
+		  	  <a href="javascript:;" id="prevBtn"></a>
+		  	  <a href="javascript:;" id="nextBtn"></a>
+ 		  </div>
+   </div>  
+</body>
+</html>
+<script src="jquery-1.11.3.min.js"></script>
+<!-- // 楼层跳转+按需加载思路:
+// 1、判断滚动条距离顶部的垂直距离scrollTop
+// 2、点击楼梯是滑动到相应的楼层
+// 3、点击返回顶部
+// 4、滚动的时候让相应的楼梯和楼层对应上
+// 5、按需加载 -->
+<script>
+   $(function(){
+   	function init(){//init
+      scroll();//调用页面滚动
+      ltClick();//点击楼梯条转相应位置
+      goTop();//点击返回顶部
+      toChange();//懒加载  
+      loubo();//轮播
+   	}
+
+   	function scroll(){//页面滚动
+       $(window).scroll(function(){
+       	show();//调用侧边导航显示和点击跳转相应位置
+       	toChange();
+       	position()
+       })
+   	}
+
+    function show(){//侧边导航显示
+        var $scrollTop = $(this).scrollTop();
+        console.log($scrollTop)
+        if ($scrollTop>=400) {
+            $('#loutiBox').fadeIn(); 
+        } else {
+            $('#loutiBox').fadeOut();
+        }
+
+        $('.loucen').each(function(){
+        	var index = $(this).index();
+        	var $loucenTop = $('.loucen').eq(index).offset().top+200;
+        	console.log($loucenTop);
+        	if ($loucenTop>$scrollTop) {
+        		$('#loutiBox li').removeClass('on').eq(index).addClass('on');
+        		return false;
+        	}
+        })
+    }
+
+    function ltClick(){//点击楼梯条转相应位置
+         var $loutiLi = $('#loutiBox li').not('.goTop');
+         $loutiLi.click(function(){
+         	var index = $(this).index();
+         	var $loucenTop = $('.loucen').eq(index).offset().top;
+         	$('html,body').animate({scrollTop:$loucenTop},1000);
+         })
+    }
+    
+    function goTop(){//点击返回顶部
+         $('.goTop').click(function(){
+         	$('html,body').animate({scrollTop:0},1000);
+         	return false;
+         })
+    }
+    
+    function toChange(){//懒加载   
+      $('img').each(function(i,elem){
+      	if ($(elem).offset().top<$(window).height()+$(window).scrollTop()) {
+          $(elem).attr('src',$(elem).attr('_src'));
+      	} 
+      })
+    }
+    
+    //导航固定
+    $navTop = $('#navBox').offset().top;
+    $('#navBox').css('position',$navTop);
+    function position(){
+    	var scrollTop = $(document).scrollTop();
+    	if (scrollTop>$navTop) {
+          $('#navBox').css('top',0);
+          $('#navBox').css('left',0);
+          $('#navBox').css('right',0);
+          $('#navBox').css('margin','auto');
+          $('#navBox').css('position','fixed');
+    	} else {
+          $('#navBox').css('top',$navTop);
+          $('#navBox').css('position','absolute');
+    	}
+    }
+
+     
+    
+    function loubo(){//轮播
+    	var curr = 0;
+    	$('#yd li').each(function(i) {
+    		$(this).click(function(){
+    			curr = i;
+    			$('.imgBox').find('img').eq(curr).fadeIn('fast').siblings().fadeOut('fast');
+    			$(this).addClass('active').siblings().removeClass('active');
+    		})
+    	});
+
+    	var timer = setInterval(function(){
+    		var go = (curr+1)%3;
+    		$('#yd li').eq(go).click();
+    	},1000)
+
+    	$('.innerarea,#prevBtn,#nextBtn').hover(function(){
+    		clearInterval(timer);
+    	},function(){
+    		timer = setInterval(function(){
+    			var go =(curr+1)%3;
+    			$('#yd li').eq(go).click();
+    		},1000);
+    	})
+         
+        $('#prevBtn').click(function() {
+             if (curr==0) {
+                 var go =2;
+             } else {
+                 var go = (curr-1)%3;
+             }
+             $('#yd li').eq(go).click();
+        });
+
+        $('#nextBtn').click(function(){
+        	if (curr==2) {
+                var go = 0;
+        	} else {
+                var go = (curr+1)%3;
+        	}
+        	$('#yd li').eq(go).click();
+        })
+
+    }
+     
+
+
+   	init()
+   })
+    
+</script>
+
